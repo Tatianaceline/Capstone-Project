@@ -89,7 +89,9 @@ Install the required packages:
 bash
 Copy code
 pip install -r requirements.txt
+
 Usage
+
 
 Run the notebook to go through data analysis and model training steps.
 
