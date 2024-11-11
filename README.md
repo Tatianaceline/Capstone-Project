@@ -49,7 +49,7 @@ Installation
 Clone the repository:
 bash
 Copy code
-git clone https://github.com/Tatianaceline/Capstone-Project/predicting-patient-readmission-risk.git
+git clone https://github.com/https://github.com/Tatianaceline/Capstone-Project/edit/main/README.md
 cd predicting-patient-readmission-risk
 Install the required packages:
 bash
