@@ -21,7 +21,9 @@ Dataset Description
 The dataset includes patient demographic information, hospital visit details, and other clinical data, which are crucial for predicting readmission risk. The main features include:
 
 patient_nbr: Unique patient identifier
+
 gender: Patient gender
+
 age: Age group of the patient
 weight: Patient weight
 time_in_hospital: Length of hospital stay
