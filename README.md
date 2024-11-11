@@ -30,9 +30,9 @@ This project develops a predictive model for patient readmission risk. By accura
 The models developed demonstrate a 33% likelihood for predicting readmission risk, suggesting that specific patient characteristics and historical metrics significantly correlate with readmission likelihood. Further optimization and additional features could enhance prediction accuracy, providing actionable insights for healthcare providers.
 
 ## Contributors
-Tatiana Celine
-Kamal Ali
-William Muthama
-Gilead Gad
-Simon Muema
-Graffin Kiprotich
+"Tatiana Celine"
+"Kamal Ali"
+"William Muthama"
+"Gilead Gad"
+"Simon Muema"
+"Graffin Kiprotich"
