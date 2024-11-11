@@ -90,9 +90,13 @@ bash
 Copy code
 pip install -r requirements.txt
 Usage
+
 Run the notebook to go through data analysis and model training steps.
+
 To execute the model prediction on new data, adjust the data paths and run the cells for the trained model.
+
 Results
+
 The project evaluates multiple models to find the best fit for predicting readmission risk. Performance metrics like accuracy, precision, and recall are used to compare models. The final model's performance will indicate its suitability for real-world application.
 
 Conclusion
