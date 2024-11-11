@@ -1,6 +1,6 @@
 # Hospital Stay Duration Prediction Project
 ## Overview
-This project aims to predict hospital stay durations using machine learning models. The predictive insights from this project can support healthcare providers in resource allocation, staff scheduling, and enhancing patient care by anticipating hospital occupancy and service demand.
+The goal of this project is to build a predictive model that identifies patients at high risk of hospital readmission.
 
 ## Table of Contents
 1. Overview
@@ -14,11 +14,13 @@ This project aims to predict hospital stay durations using machine learning mode
 9. Contributors
 
 ## Project Goals
-The primary objective of this project is to create a machine learning model that accurately predicts the duration of a patient's hospital stay. Key business applications include:
+To create a model that predicts the risk of a patient being readmitted back into hospital based on key health indicators.
 
-Optimizing resource allocation and bed management.
-Improving staff scheduling for better patient outcomes.
-Enhancing patient satisfaction by reducing delays and ensuring availability of resources.
+### Impact
+This model will enable healthcare providers to;
+Optimize resource allocation and bed management.
+Improve staff scheduling for better patient outcomes.
+Enhance patient satisfaction by reducing delays and ensuring availability of resources.
 
 ## Dataset
 The dataset used for this project includes various features related to patients and their hospital stays, such as:
