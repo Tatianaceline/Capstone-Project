@@ -67,7 +67,7 @@ Prediction Accuracy: 86.4%
 These metrics indicate a reliable model performance, allowing us to predict hospital stay duration with reasonable accuracy. This insight can significantly impact operational efficiency in healthcare facilities.
 
 ## Conclusion
-Our project aimed to predict hospital stay duration, which can help healthcare providers better allocate resources and improve patient care. Using advanced modeling techniques, we achieved predictions with an accuracy of around 86%, meaning our model can reliably anticipate average hospital stay lengths. This insight allows hospitals to plan staffing, bed occupancy, and supply needs more effectively. Future refinements could make these predictions even more accurate, ultimately supporting better operational efficiency and enhancing the patient experience.
+Our project aimed to predict patient risk of readmission, which can help healthcare providers better allocate resources and improve patient care. Using advanced modeling techniques, we achieved predictions with an accuracy of around 86%, meaning our model can reliably anticipate this risk. This insight allows hospitals to plan staffing, bed occupancy, and supply needs more effectively. Future refinements could make these predictions even more accurate, ultimately supporting better operational efficiency and enhancing the patient experience.
 
 ## Future Work
 Feature Engineering: Further refinement of features, including interaction terms and feature selection, could help improve model accuracy.
