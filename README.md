@@ -1,5 +1,5 @@
 # Predicting Patient Readmission Risk
-![Image Description](images/Hospital Readmission Cycle.jpg)
+![Hospital Readmission Cycle](images/Hospital Readmission Cycle.jpg)
 
 This project develops a predictive model for patient readmission risk. By accurately identifying high-risk patients, hospitals and medical providers can better allocate resources and improve patient care, potentially reducing readmission rates and associated costs.
 
