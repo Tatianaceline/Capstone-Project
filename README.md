@@ -1,67 +1,37 @@
-# Predictive Model for Patient Readmission
+# Predicting Patient Readmission Risk
 
-## Overview
-Patient readmission is a critical issue in healthcare, indicating potential deficiencies in patient care and leading to significant costs. This project focuses on developing a predictive model to identify diabetic patients at high risk of readmission using advanced machine learning techniques.
+This project develops a predictive model for patient readmission risk. By accurately identifying high-risk patients, hospitals and medical providers can better allocate resources and improve patient care, potentially reducing readmission rates and associated costs.
 
-## Objective
-The primary goal of this project is to create a model that can effectively predict patient readmission by analyzing structured data. By leveraging machine learning algorithms, we aim to enhance patient outcomes and reduce unnecessary hospital visits.
-This model will enable healthcare providers to;
-  - Optimize resource allocation and bed management.
-  - Improve staff scheduling for better patient outcomes.
-  - Enhance patient satisfaction by reducing delays and ensuring availability of resources.
+## Project Overview
+- **Goal**: Predict the likelihood of patient readmission based on demographics, medical metrics, and hospital visit information.
+- **Models Used**: Logistic Regression, Random Forest, Neural Network
+- **Accuracy Achieved**: Approximately 0.33 across models, indicating a consistent pattern for predicting readmission.
 
+## Project Structure
+1. **Business Understanding**: Defines the project goals, including identifying key factors and addressing hospital management concerns.
+2. **Data Understanding**: Describes the data sources, patient attributes, and target variable (`readmitted`).
+3. **Data Cleaning**: Details data preparation steps, such as handling missing values and normalizing data.
+4. **Exploratory Data Analysis (EDA)**: Visualizes patterns and potential correlations among patient characteristics and readmission rates.
+5. **Modeling and Evaluation**: Trains and evaluates three models to predict readmission, providing a robust baseline.
+6. **Conclusion**: Summarizes findings, including that each model identifies a 33% chance of readmission.
 
-## Technologies Used
-- Baseline Models: Random Forest,Logistic Regression,XG Boost Regressor etc for performance comparison.
+## Key Features
+- **Feature Scaling**: Normalization of features for optimal model performance.
+- **Unsupervised Learning (Clustering)**: K-means clustering groups patients with similar characteristics, adding insights into high-risk categories.
+- **Supervised Learning**: Logistic Regression, Random Forest, and Neural Network models predict the likelihood of readmission.
 
-## Dataset
-The project utilizes the MIMIC-III synthetic diabetic dataset, which contains a wealth of information which include:
-- Structured Data: Demographics, lab results, etc.
-
-## Modeling Approach
-We explored various machine learning models, including:
-
-Random Forest Regressor
-Gradient Boosting Regressor
-XGBoost Regressor
-LightGBM Regressor
-Each model was tuned to find the optimal hyperparameters, and feature engineering techniques were applied to improve accuracy and model interpretability.
-
-
-## Installation Instructions
-1. Clone the Repository: 
+## Installation and Usage
+1. Clone this repository: 
    ```bash
-   git clone <repository-url>
-   ```
-2. Set Up the Environment:
-   - Make sure you have Python installed.
-   - Install required libraries:
-     ```bash
-     pip install -r requirements.txt
-     ```
-3. Download the Dataset: 
-   - Obtain the MIMIC-III synthetic diabetic dataset and place it in the appropriate directory.
-
-## Research Plan
-1. Data Exploration:
-   - Analyze the MIMIC-III synthetic diabetic dataset to understand its structure and contents.
-
-2. Model Development:
-   - Build a model for sequential data analysis and compare its effectiveness against Random Forest and Logistic Regression.
-
-3. Evaluation:
-   - Assess model performance using predictive accuracy and implement dropout techniques to mitigate overfitting.
+   git clone https://github.com/Tatianaceline/Predictive-Model-for-Patient-Readmission-Risk.git
+   
+## Conclusion
+The models developed demonstrate a 33% likelihood for predicting readmission risk, suggesting that specific patient characteristics and historical metrics significantly correlate with readmission likelihood. Further optimization and additional features could enhance prediction accuracy, providing actionable insights for healthcare providers.
 
 ## Contributors
-- [Gilead Gad]
-- [Kamal Ali]
-- [Tatiana Temba]
-- [Graffin Kiprotich]
-- [Simon Muema]
-
-## License
-This project is licensed under the MIT License. Please see the LICENSE file for more details.
-
----
-
-Feel free to modify any sections as needed or ask for additional information!
+Tatiana Celine
+Kamal Ali
+William Muthama
+Gilead Gad
+Simon Muema
+Graffin Kiprotich
