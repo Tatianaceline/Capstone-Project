@@ -1,106 +1,73 @@
-# Capstone-Project
-## Predicting Patient Readmission Risk
+# Hospital Stay Duration Prediction Project
+## Overview
+This project aims to predict hospital stay durations using machine learning models. The predictive insights from this project can support healthcare providers in resource allocation, staff scheduling, and enhancing patient care by anticipating hospital occupancy and service demand.
 
-This project aims to build a predictive model for assessing patient readmission risk based on demographic and clinical data. Accurately identifying high-risk patients can enhance patient care quality and help healthcare providers manage costs associated with frequent readmissions.
+## Table of Contents
+1. Overview
+2. Project Goals
+3. Dataset
+4. Modeling Approach
+5. Evaluation Metrics
+6. Results
+7. Conclusion
+8. Future Work
+9. Contributors
 
-Table of Contents
+## Project Goals
+The primary objective of this project is to create a machine learning model that accurately predicts the duration of a patient's hospital stay. Key business applications include:
 
-Project Overview
+Optimizing resource allocation and bed management.
+Improving staff scheduling for better patient outcomes.
+Enhancing patient satisfaction by reducing delays and ensuring availability of resources.
 
-Dataset Description
-
-Project Workflow
-
-Installation
-
-Usage
-
-Results
-
-Conclusion
-
-Project Overview
-
-Hospital readmissions are a significant healthcare challenge, impacting both patient well-being and operational costs. This project aims to identify key factors associated with readmission risk and develop a model that flags high-risk patients.
-
-Key Questions
-Which patient characteristics correlate with higher readmission risk?
-How does hospital stay duration impact readmission likelihood?
-Can a predictive model accurately forecast readmissions?
-Dataset Description
-The dataset includes patient demographic information, hospital visit details, and other clinical data, which are crucial for predicting readmission risk. The main features include:
+## Dataset
+The dataset used for this project includes various features related to patients and their hospital stays, such as:
 
 patient_nbr: Unique patient identifier
-
 gender: Patient gender
-
 age: Age group of the patient
-
-weight: Patient weight
-
-time_in_hospital: Length of hospital stay
-
+weight: Patient weight (if recorded)
+time_in_hospital: Actual length of stay (target variable)
 medical_specialty: Specialty of the primary care provider
-
-num_lab_procedures: Number of lab tests during the stay
-
-num_procedures: Number of procedures conducted
-
+num_lab_procedures: Number of lab tests performed
+num_procedures: Number of procedures during the stay
 num_medications: Number of medications prescribed
-
-number_outpatient: Number of outpatient visits
-
-number_emergency: Number of emergency visits
-
-number_inpatient: Previous inpatient admissions
-
+number_outpatient: Previous outpatient visits
+number_emergency: Emergency visits
+number_inpatient: Prior inpatient admissions
 number_diagnoses: Number of diagnoses
+diabetesMed: Indicator if diabetes medication was prescribed
+readmitted: Indicator if the patient was readmitted (used for classification tasks)
+Data cleaning and preprocessing steps included handling missing values, encoding categorical variables, and scaling features as needed for optimal model performance.
 
-diabetesMed: Diabetes medication prescribed (yes/no)
+## Modeling Approach
+We explored various machine learning models, including:
 
-readmitted: Target variable indicating if the patient was readmitted
+Random Forest Regressor
+Gradient Boosting Regressor
+XGBoost Regressor
+LightGBM Regressor
+Each model was tuned to find the optimal hyperparameters, and feature engineering techniques were applied to improve accuracy and model interpretability.
 
-Project Workflow
+## Evaluation Metrics
+The model's performance was evaluated based on:
 
-The project workflow includes the following stages:
+Mean Squared Error (MSE): Measures the average squared difference between predicted and actual values.
+Root Mean Squared Error (RMSE): Provides an interpretable error value by taking the square root of MSE.
+Prediction Accuracy: Estimated based on the RMSE as a percentage of the actual value range to gauge overall performance.
 
-Business Understanding: 
-Define the healthcare challenges of readmissions.
+## Results
+The final model achieved:
 
-Data Understanding: Understand the dataset and explore patterns.
+MSE: 16.62
+RMSE: 4.08
+Prediction Accuracy: 86.4%
+These metrics indicate a reliable model performance, allowing us to predict hospital stay duration with reasonable accuracy. This insight can significantly impact operational efficiency in healthcare facilities.
 
-Data Import and Library Setup: Load data and necessary libraries.
+## Conclusion
+Our project aimed to predict hospital stay duration, which can help healthcare providers better allocate resources and improve patient care. Using advanced modeling techniques, we achieved predictions with an accuracy of around 86%, meaning our model can reliably anticipate average hospital stay lengths. This insight allows hospitals to plan staffing, bed occupancy, and supply needs more effectively. Future refinements could make these predictions even more accurate, ultimately supporting better operational efficiency and enhancing the patient experience.
 
-Data Cleaning: Prepare the data for analysis.
-
-Exploratory Data Analysis (EDA): Identify key patterns and correlations.
-
-Modeling and Evaluation: Develop predictive models and evaluate their performance.
-
-Installation
-Clone the repository:
-
-bash
-
-Copy code
-git clone https://github.com/Tatianaceline/Capstone-Project/edit/main/README.md
-cd predicting-patient-readmission-risk
-Install the required packages:
-bash
-Copy code
-pip install -r requirements.txt
-
-Usage
-
-
-Run the notebook to go through data analysis and model training steps.
-
-To execute the model prediction on new data, adjust the data paths and run the cells for the trained model.
-
-Results
-
-The project evaluates multiple models to find the best fit for predicting readmission risk. Performance metrics like accuracy, precision, and recall are used to compare models. The final model's performance will indicate its suitability for real-world application.
-
-Conclusion
-
-By identifying patients at high risk of readmission, healthcare providers can focus on targeted interventions to reduce the likelihood of readmissions, thereby improving patient outcomes and optimizing healthcare resources.
+## Future Work
+Feature Engineering: Further refinement of features, including interaction terms and feature selection, could help improve model accuracy.
+Alternative Models: Testing additional models such as neural networks for deeper insights and possibly higher accuracy.
+Real-Time Prediction: Developing a deployment pipeline for integrating the model with hospital management systems to provide real-time predictions.
