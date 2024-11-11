@@ -79,9 +79,11 @@ Modeling and Evaluation: Develop predictive models and evaluate their performanc
 
 Installation
 Clone the repository:
+
 bash
+
 Copy code
-git clone https://github.com/https://github.com/Tatianaceline/Capstone-Project/edit/main/README.md
+git clone https://github.com/Tatianaceline/Capstone-Project/edit/main/README.md
 cd predicting-patient-readmission-risk
 Install the required packages:
 bash
