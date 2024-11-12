@@ -1,4 +1,5 @@
 # Predicting Patient Readmission Risk
+![Images/Hospital Readmission Cycle](https://sensights.ai/wp-content/uploads/2020/09/4-2.png)
 
 This project develops a predictive model for patient readmission risk. By accurately identifying high-risk patients, hospitals and medical providers can better allocate resources and improve patient care, potentially reducing readmission rates and associated costs.
 
@@ -8,6 +9,7 @@ This project develops a predictive model for patient readmission risk. By accura
 - **Accuracy Achieved**: Approximately 0.33 across models, indicating a consistent pattern for predicting readmission.
 
 ## Project Structure
+![Images/Hospital Readmission Cycle](https://media.licdn.com/dms/image/D5612AQEvsJOKlLbNoA/article-cover_image-shrink_720_1280/0/1705576758053?e=2147483647&v=beta&t=bMbb05oGHQu-w8v2e_d4D7n5JAx_UDAUKp9ryuk56yo)
 1. **Business Understanding**: Defines the project goals, including identifying key factors and addressing hospital management concerns.
 2. **Data Understanding**: Describes the data sources, patient attributes, and target variable (`readmitted`).
 3. **Data Cleaning**: Details data preparation steps, such as handling missing values and normalizing data.
@@ -29,9 +31,9 @@ This project develops a predictive model for patient readmission risk. By accura
 The models developed demonstrate a 33% likelihood for predicting readmission risk, suggesting that specific patient characteristics and historical metrics significantly correlate with readmission likelihood. Further optimization and additional features could enhance prediction accuracy, providing actionable insights for healthcare providers.
 
 ## Contributors
-Tatiana Celine
-Kamal Ali
-William Muthama
-Gilead Gad
-Simon Muema
-Graffin Kiprotich
+1. Tatiana Celine
+2. Kamal Ali
+3. William Muthama
+4. Gilead Gad
+5. Simon Muema
+6. Graffin Kiprotich
