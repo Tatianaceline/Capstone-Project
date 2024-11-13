@@ -15,7 +15,7 @@ def home():
 def predict():
     # Define 'data' without missing features
     data = [
-        float(request.form.get('time_in_hospital', 0)),
+        float(request.form.get('time_in_hospital')),
         float(request.form.get('num_lab_procedures')),
         float(request.form.get('num_procedures')),
         float(request.form.get('num_medications')),

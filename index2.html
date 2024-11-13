@@ -5,15 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Patient Readmission Prediction</title>
     <style>
-        body { font-family: Arial, sans-serif; background-color: #f0f2f5; }
-        .container { max-width: 600px; margin: 50px auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
-        h2 { text-align: center; color: #333; }
-        .form-group { margin: 15px 0; }
-        label { display: block; font-weight: bold; color: #555; }
-        input[type="number"] { width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px; }
-        button { width: 100%; padding: 10px; background-color: #28a745; color: white; border: none; border-radius: 4px; font-size: 16px; cursor: pointer; }
-        button:hover { background-color: #218838; }
-        .result { margin-top: 20px; font-size: 18px; text-align: center; }
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: lightgray; /* Fallback color to ensure background is visible */
+            background-image: url('hosp12.jpg');  
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        /*body { 
+            background-image: url('hosp12.jpg');  
+           /* background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            color: #333;
+        }*/
+        .container { 
+            max-width: 600px; 
+            margin: 50px auto; 
+            padding: 20px; 
+            background: rgba(255, 255, 255, 0.9); /* White with slight transparency */
+            border-radius: 8px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+        }
+        h2 { 
+            text-align: center; 
+            color: #333; 
+        }
+        .form-group { 
+            margin: 15px 0; 
+        }
+        label { 
+            display: block; 
+            font-weight: bold; 
+            color: #555; 
+        }
+        input[type="number"] { 
+            width: 100%; 
+            padding: 8px; 
+            margin-top: 5px; 
+            border: 1px solid #ccc; 
+            border-radius: 4px; 
+        }
+        button { 
+            width: 100%; 
+            padding: 10px; 
+            background-color: #28a745; 
+            color: white; 
+            border: none; 
+            border-radius: 4px; 
+            font-size: 16px; 
+            cursor: pointer; 
+        }
+        button:hover { 
+            background-color: #218838; 
+        }
+        .result { 
+            margin-top: 20px; 
+            font-size: 18px; 
+            text-align: center; 
+        }
     </style>
 </head>
 <body>
@@ -52,9 +107,6 @@
                 <label for="number_diagnoses">Number of Diagnoses:</label>
                 <input type="number" name="number_diagnoses" id="number_diagnoses" min="0" required>
             </div>
-
-
-           
             <button type="submit">Predict Readmission</button>
         </form>
         {% if result is not none %}
